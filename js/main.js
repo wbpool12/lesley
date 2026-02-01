@@ -90,6 +90,17 @@
     reveals.forEach(el => io.observe(el));
   }
 
+  // ===== Close mobile nav on outside tap =====
+  document.addEventListener('click', e => {
+    if (navLinks && navLinks.classList.contains('open')) {
+      if (!navLinks.contains(e.target) && !toggle.contains(e.target)) {
+        toggle.classList.remove('open');
+        navLinks.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+  });
+
   // ===== Accordion toggle (area pages) =====
   document.querySelectorAll('.accordion-toggle').forEach(btn => {
     btn.addEventListener('click', () => {

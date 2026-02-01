@@ -1,174 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Lesley Pool Real Estate</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Lesley Pool Real Estate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="index.html" class="logo">Lesley <span class="gold">Pool</span></a>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="renting.html">Renting</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Areas</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="southlake.html">Southlake</a></li>
-                            <li><a href="grapevine.html">Grapevine</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Blog</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="blog-sell-faster.html">Sell Faster</a></li>
-                            <li><a href="blog-trec-contract.html">TREC Contract</a></li>
-                            <li><a href="blog-energy-efficient.html">Energy Efficient</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
+<header class="header">
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <a href="mailto:info@lesleypoolrealestate.com">info@lesleypoolrealestate.com</a>
+        <a href="tel:8179833231">(817) 983-3231</a>
+      </div>
+      <div class="top-bar-right">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Pinterest</a>
+      </div>
+    </div>
+  </div>
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo">Lesley <span>Pool</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="renting.html">Renting</a>
+      <div class="dropdown">
+        <button class="dropdown-toggle">Areas <span class="dropdown-arrow">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="southlake.html">Southlake, TX</a>
+          <a href="grapevine.html">Grapevine, TX</a>
         </div>
-    </header>
-
-    <!-- Hero -->
-    <section class="hero-sm">
-        <div class="container">
-            <h1>Get in Touch</h1>
-            <p>Helping Buyers, Sellers and Renters make their real estate dreams a reality in DFW.</p>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-toggle">Blog <span class="dropdown-arrow">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="blog-sell-faster.html">Sell Your Home Faster</a>
+          <a href="blog-trec-contract.html">TREC Contract Guide</a>
+          <a href="blog-energy-efficient.html">Energy-Efficient Upgrades</a>
         </div>
-    </section>
+      </div>
+      <a href="contact.html" class="btn btn-gold btn-sm nav-cta">Contact</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-    <!-- Contact Section -->
-    <section class="section">
-        <div class="container">
-            <div class="contact-grid">
+<section class="hero hero-sub">
+  <div class="container">
+    <h1>Get in Touch</h1>
+    <p class="lead">Helping Buyers, Sellers and Renters make their real estate dreams a reality in DFW.</p>
+  </div>
+</section>
 
-                <!-- Left Column — Contact Info -->
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <span class="contact-card-icon">&#9993;</span>
-                        <div>
-                            <h3>Email</h3>
-                            <p><a href="mailto:info@lesleypoolrealestate.com">info@lesleypoolrealestate.com</a></p>
-                        </div>
-                    </div>
-
-                    <div class="contact-card">
-                        <span class="contact-card-icon">&#128222;</span>
-                        <div>
-                            <h3>Phone</h3>
-                            <p><a href="tel:+18179833231">(817) 983-3231</a></p>
-                        </div>
-                    </div>
-
-                    <div class="contact-card">
-                        <span class="contact-card-icon">&#128205;</span>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Keller, TX &mdash; Serving the DFW Metroplex</p>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">FB</a>
-                        <a href="#" class="social-link" aria-label="Instagram">IG</a>
-                        <a href="#" class="social-link" aria-label="YouTube">YT</a>
-                        <a href="#" class="social-link" aria-label="Pinterest">Pin</a>
-                    </div>
-                </div>
-
-                <!-- Right Column — Contact Form -->
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Your email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Your phone number">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <select id="subject" name="subject" required>
-                                <option value="" disabled selected>Select a subject</option>
-                                <option value="Buying">Buying</option>
-                                <option value="Selling">Selling</option>
-                                <option value="Renting">Renting</option>
-                                <option value="General Inquiry">General Inquiry</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary full-width">Send Message</button>
-                    </form>
-                </div>
-
-            </div>
+<section class="section">
+  <div class="container contact-grid">
+    <div>
+      <div class="contact-card">
+        <div class="contact-card-icon">✉</div>
+        <h4>Email</h4>
+        <p><a href="mailto:info@lesleypoolrealestate.com">info@lesleypoolrealestate.com</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">📞</div>
+        <h4>Phone</h4>
+        <p><a href="tel:8179833231">(817) 983-3231</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">📍</div>
+        <h4>Location</h4>
+        <p>Keller, TX — Serving the DFW Metroplex</p>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">YouTube</a>
+        <a href="#" class="social-link">Pinterest</a>
+      </div>
+    </div>
+    <div class="form-card">
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <a href="index.html" class="logo">Lesley <span class="gold">Pool</span></a>
-                    <p>Your trusted real estate partner in the DFW Metroplex. Helping buyers, sellers and renters achieve their goals.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="renting.html">Renting</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="mailto:info@lesleypoolrealestate.com">info@lesleypoolrealestate.com</a></li>
-                        <li><a href="tel:+18179833231">(817) 983-3231</a></li>
-                        <li>Keller, TX</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Lesley Pool Real Estate. All rights reserved.</p>
-            </div>
+        <div class="form-group">
+          <input type="tel" name="phone" placeholder="Phone">
         </div>
-    </footer>
+        <div class="form-group">
+          <select name="subject" required>
+            <option value="" disabled selected>Select a subject</option>
+            <option value="Buying">Buying</option>
+            <option value="Selling">Selling</option>
+            <option value="Renting">Renting</option>
+            <option value="General Inquiry">General Inquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold btn-full">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
 
-    <script src="js/main.js"></script>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo">Lesley <span>Pool</span></a>
+        <p class="footer-about">Helping Buyers, Sellers and Renters make their real estate dreams a reality in DFW.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="renting.html">Renting</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h5>Areas</h5>
+        <div class="footer-links">
+          <a href="southlake.html">Southlake, TX</a>
+          <a href="grapevine.html">Grapevine, TX</a>
+        </div>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <div class="footer-contact">
+          <p><a href="mailto:info@lesleypoolrealestate.com">info@lesleypoolrealestate.com</a></p>
+          <p><a href="tel:8179833231">(817) 983-3231</a></p>
+          <p>Keller, TX — Serving DFW</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Lesley Pool Real Estate. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

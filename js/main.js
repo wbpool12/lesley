@@ -1,24 +1,31 @@
-// Header scroll effect
+// Scroll effect
 const header = document.querySelector('.header');
-window.addEventListener('scroll', () => {
-  header.classList.toggle('scrolled', window.scrollY > 20);
-});
+if (header) {
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 10);
+  }, { passive: true });
+}
 
-// Mobile nav toggle
+// Mobile toggle
 const toggle = document.querySelector('.mobile-toggle');
 const navLinks = document.querySelector('.nav-links');
-if (toggle) {
+if (toggle && navLinks) {
   toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
     navLinks.classList.toggle('open');
   });
 }
 
-// Mobile dropdown toggle
+// Mobile dropdown
 document.querySelectorAll('.dropdown-toggle').forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    if (window.innerWidth <= 900) {
+  btn.addEventListener('click', e => {
+    if (window.innerWidth <= 920) {
       e.preventDefault();
-      btn.closest('.dropdown').classList.toggle('open');
+      const dd = btn.closest('.dropdown');
+      document.querySelectorAll('.dropdown').forEach(d => {
+        if (d !== dd) d.classList.remove('open');
+      });
+      dd.classList.toggle('open');
     }
   });
 });
@@ -26,14 +33,14 @@ document.querySelectorAll('.dropdown-toggle').forEach(btn => {
 // Close mobile nav on link click
 document.querySelectorAll('.nav-links a:not(.dropdown-toggle)').forEach(link => {
   link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
+    if (toggle) toggle.classList.remove('open');
+    if (navLinks) navLinks.classList.remove('open');
   });
 });
 
-// Active page highlight
-const currentPage = window.location.pathname;
-document.querySelectorAll('.nav-links a').forEach(link => {
-  if (link.getAttribute('href') === currentPage) {
-    link.classList.add('active');
-  }
+// Active page
+const path = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links > a').forEach(link => {
+  const href = link.getAttribute('href');
+  if (href === path) link.classList.add('active');
 });

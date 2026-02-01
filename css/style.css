@@ -1256,6 +1256,16 @@ p {
 @media (max-width: 1024px) {
   .mobile-toggle { display: flex; align-items: center; justify-content: center; }
 
+  /* Hide nav-bar background on mobile — nav is in floating panel */
+  .nav-bar {
+    background: transparent;
+    border-bottom: none;
+    position: static;
+    height: 0;
+    overflow: visible;
+  }
+  .nav-inner { height: 0; }
+
   /* Dark overlay behind menu */
   .nav-links::before {
     content: '';
@@ -1326,19 +1336,26 @@ p {
   }
   .dropdown.open .dropdown-menu { display: block; }
 
+  /* Dropdown arrow color */
+  .dropdown-toggle .arrow {
+    color: rgba(255,255,255,.5);
+    font-size: .6rem;
+  }
+
   .dropdown-menu a {
     padding: 14px 28px 14px 44px;
-    color: rgba(255,255,255,.7) !important;
-    font-size: .85rem;
-    font-weight: 400;
-    border-bottom: 1px solid rgba(255,255,255,.05);
+    color: rgba(255,255,255,.75) !important;
+    font-size: .88rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255,255,255,.06);
     display: block;
     transition: background .2s, color .2s;
+    letter-spacing: .3px;
   }
   .dropdown-menu a:hover,
   .dropdown-menu a.active {
-    background: rgba(255,255,255,.08);
-    color: var(--accent) !important;
+    background: rgba(255,255,255,.1);
+    color: var(--white) !important;
   }
 
   .services-grid { grid-template-columns: repeat(2, 1fr); }

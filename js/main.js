@@ -90,10 +90,12 @@
     reveals.forEach(el => io.observe(el));
   }
 
-  // ===== Close mobile nav on outside tap =====
+  // ===== Close mobile nav on outside tap / backdrop click =====
   document.addEventListener('click', e => {
     if (navLinks && navLinks.classList.contains('open')) {
-      if (!navLinks.contains(e.target) && !toggle.contains(e.target)) {
+      // Close if clicking outside the nav panel (backdrop area) or outside both nav and toggle
+      const clickedBackdrop = e.target === navLinks; // ::before overlay area
+      if (clickedBackdrop || (!navLinks.contains(e.target) && !toggle.contains(e.target))) {
         toggle.classList.remove('open');
         navLinks.classList.remove('open');
         document.body.style.overflow = '';

@@ -75,6 +75,12 @@
     }
   });
 
+  // ===== Home hero slow zoom =====
+  const homeHero = document.querySelector('.home-hero');
+  if (homeHero) {
+    requestAnimationFrame(() => homeHero.classList.add('loaded'));
+  }
+
   // ===== Reveal on scroll =====
   const reveals = document.querySelectorAll('.reveal');
   if (reveals.length && 'IntersectionObserver' in window) {

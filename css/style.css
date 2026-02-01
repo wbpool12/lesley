@@ -1322,10 +1322,10 @@ p {
   .nav-social { display: none; }
 
   .dropdown-menu {
-    position: static;
-    transform: none;
-    opacity: 1;
-    visibility: visible;
+    position: static !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
     box-shadow: none;
     border: none;
     padding: 0;
@@ -1333,8 +1333,11 @@ p {
     min-width: 0;
     background: rgba(255,255,255,.04);
     border-radius: 0;
+    transition: none;
   }
   .dropdown.open .dropdown-menu { display: block; }
+  .dropdown:hover .dropdown-menu { display: none; }
+  .dropdown.open:hover .dropdown-menu { display: block; }
 
   /* Dropdown arrow color */
   .dropdown-toggle .arrow {

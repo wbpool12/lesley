@@ -707,6 +707,89 @@ p  { margin-bottom: .9rem; }
   .footer-grid { grid-template-columns: 1fr; gap: 24px; }
 }
 
+/* ===== IMAGE BACKGROUNDS FOR SPLIT VISUALS ===== */
+.split-visual {
+  background-size: cover;
+  background-position: center;
+  font-size: 0;   /* hide emoji fallback when bg-image loads */
+  min-height: 320px;
+}
+.split-visual.img-teacher  { background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80'); }
+.split-visual.img-family   { background-image: url('https://images.unsplash.com/photo-1581579438747-104c53d7ffa4?w=600&q=80'); }
+.split-visual.img-home     { background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80'); }
+.split-visual.img-rental   { background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80'); }
+.split-visual.img-southlake { background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80'); }
+.split-visual.img-townsquare { background-image: url('https://images.unsplash.com/photo-1555636222-cae831e670b3?w=600&q=80'); }
+.split-visual.img-grapevine { background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80'); }
+
+/* Hero with background image */
+.hero.hero-home {
+  background: linear-gradient(135deg, rgba(27,45,79,.88), rgba(15,29,53,.92)),
+    url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=80') center/cover no-repeat;
+}
+.hero-sub.hero-about {
+  background: linear-gradient(135deg, rgba(27,45,79,.85), rgba(15,29,53,.9)),
+    url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1400&q=80') center/cover no-repeat;
+}
+.hero-sub.hero-services {
+  background: linear-gradient(135deg, rgba(27,45,79,.85), rgba(15,29,53,.9)),
+    url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1400&q=80') center/cover no-repeat;
+}
+.hero-sub.hero-renting {
+  background: linear-gradient(135deg, rgba(27,45,79,.85), rgba(15,29,53,.9)),
+    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&q=80') center/cover no-repeat;
+}
+.hero-sub.hero-contact {
+  background: linear-gradient(135deg, rgba(27,45,79,.85), rgba(15,29,53,.9)),
+    url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1400&q=80') center/cover no-repeat;
+}
+.hero-sub.hero-southlake {
+  background: linear-gradient(135deg, rgba(27,45,79,.85), rgba(15,29,53,.9)),
+    url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1400&q=80') center/cover no-repeat;
+}
+.hero-sub.hero-grapevine {
+  background: linear-gradient(135deg, rgba(27,45,79,.85), rgba(15,29,53,.9)),
+    url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=80') center/cover no-repeat;
+}
+
+.hero-sub.hero-blog-sell {
+  background: linear-gradient(135deg, rgba(27,45,79,.85), rgba(15,29,53,.9)),
+    url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1400&q=80') center/cover no-repeat;
+}
+.hero-sub.hero-blog-trec {
+  background: linear-gradient(135deg, rgba(27,45,79,.85), rgba(15,29,53,.9)),
+    url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1400&q=80') center/cover no-repeat;
+}
+.hero-sub.hero-blog-energy {
+  background: linear-gradient(135deg, rgba(27,45,79,.85), rgba(15,29,53,.9)),
+    url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1400&q=80') center/cover no-repeat;
+}
+
+/* Blog card images */
+.blog-card-img { background-size: cover; background-position: center; }
+.blog-card-img.img-sell   { background-image: linear-gradient(rgba(27,45,79,.6),rgba(15,29,53,.7)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&q=80'); }
+.blog-card-img.img-trec   { background-image: linear-gradient(rgba(27,45,79,.6),rgba(15,29,53,.7)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=500&q=80'); }
+.blog-card-img.img-energy { background-image: linear-gradient(rgba(27,45,79,.6),rgba(15,29,53,.7)), url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=500&q=80'); }
+
+/* Card grid variants */
+.card-grid-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.card-grid-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+
+/* Feature check (used on renting page) */
+.feature-check {
+  flex-shrink: 0;
+  width: 30px; height: 30px;
+  background: var(--gold-pale);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: .8rem;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
 /* ===== UTILITIES ===== */
 .text-center { text-align: center; }
 .text-gold   { color: var(--gold); }

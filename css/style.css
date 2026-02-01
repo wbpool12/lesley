@@ -1281,8 +1281,10 @@ p {
   }
   .dropdown.open .dropdown-menu { display: block; }
   .dropdown-menu a {
-    padding: 12px 10px;
-    color: var(--gray-600);
+    padding: 14px 10px;
+    color: var(--charcoal);
+    font-size: .88rem;
+    font-weight: 500;
     border-bottom: 1px solid var(--gray-100);
   }
   .dropdown-menu a:hover { background: transparent; color: var(--black); }
@@ -1315,7 +1317,7 @@ p {
 
   .split { grid-template-columns: 1fr; gap: 32px; }
   .split-reverse { direction: ltr; }
-  .split-visual { aspect-ratio: 16/9; min-height: 220px; }
+  .split-visual { aspect-ratio: 3/4; min-height: 360px; }
 
   .services-grid { grid-template-columns: 1fr; }
   .card-grid { grid-template-columns: 1fr; }

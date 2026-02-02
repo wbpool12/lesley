@@ -82,7 +82,7 @@
   }
 
   // ===== Reveal on scroll =====
-  const reveals = document.querySelectorAll('.reveal, .stagger-children');
+  const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .stagger-children');
   if (reveals.length && 'IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });

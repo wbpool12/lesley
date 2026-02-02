@@ -64,10 +64,13 @@
 <main>
 
   <!-- Hero Banner -->
-  <section class="hero hero-sub section-navy">
+  <section class="page-hero" id="pageHero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1400&q=80');"></div>
+    <div class="page-hero-overlay"></div>
     <div class="container">
+      <span class="section-label">Get to Know Me</span>
       <h1>About Lesley Pool</h1>
-      <p>A teacher turned realtor &mdash; service is at the heart of everything I do.</p>
+      <p class="lead">A teacher turned realtor &mdash; service is at the heart of everything I do.</p>
     </div>
   </section>
 
@@ -75,7 +78,7 @@
   <section class="section">
     <div class="container">
       <div class="split reveal">
-        <div style="border-radius: 10px; overflow: hidden;">
+        <div class="img-frame">
           <img src="https://lesleypoolrealestate.com/wp-content/uploads/2026/01/Cowboy-Family-Photo-Actual-Size-768x1024.jpeg" alt="Lesley Pool and family" style="width: 100%; height: auto; display: block;">
         </div>
         <div class="split-content">
@@ -101,7 +104,7 @@
         <div class="bar"></div>
         <p>The principles that guide how I work and how I show up for my clients.</p>
       </div>
-      <div class="card-grid reveal">
+      <div class="card-grid stagger-children">
         <div class="card">
           <div class="card-icon">&#10084;</div>
           <h3>Family</h3>
@@ -132,7 +135,7 @@
   </section>
 
   <!-- Personal Story -->
-  <section class="section">
+  <section class="section reveal">
     <div class="container">
       <div class="article reveal">
         <div class="section-header">
@@ -220,6 +223,10 @@
   </div>
 </footer>
 
+<script>
+  const ph = document.getElementById('pageHero');
+  if (ph) requestAnimationFrame(() => ph.classList.add('loaded'));
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>

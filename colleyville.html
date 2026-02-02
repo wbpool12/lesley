@@ -64,10 +64,13 @@
 <main>
 
   <!-- Hero Section -->
-  <section class="hero hero-area hero-colleyville">
+  <section class="page-hero" id="pageHero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=80');"></div>
+    <div class="page-hero-overlay"></div>
     <div class="container">
+      <span class="section-label">Explore the Area</span>
       <h1>Small Town Living with Big City Life!</h1>
-      <p>Colleyville, Texas</p>
+      <p class="lead">Colleyville, Texas</p>
     </div>
   </section>
 
@@ -99,7 +102,7 @@
   <!-- Pros and Cons -->
   <section class="section">
     <div class="container">
-      <div class="pros-cons reveal">
+      <div class="pros-cons stagger-children">
         <div class="pros-col">
           <h3>5 Reasons You'll Love It</h3>
           <div class="bar"></div>
@@ -166,7 +169,7 @@
       <p>Colleyville is renowned for its impressive custom-built homes set on expansive lots. The city's residential landscape features a mix of stately traditional estates, elegant French country designs, and sleek contemporary custom builds. With many properties exceeding one acre, homeowners enjoy generous setbacks, mature tree coverage, and resort-style outdoor living spaces that define the Colleyville lifestyle.</p>
 
       <div class="home-style-row reveal">
-        <div class="home-style-img">
+        <div class="home-style-img zoom-hover">
           <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Traditional Estate Home in Colleyville">
         </div>
         <div class="home-style-content">
@@ -176,7 +179,7 @@
       </div>
 
       <div class="home-style-row reverse reveal">
-        <div class="home-style-img">
+        <div class="home-style-img zoom-hover">
           <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="French Country Home in Colleyville">
         </div>
         <div class="home-style-content">
@@ -186,7 +189,7 @@
       </div>
 
       <div class="home-style-row reveal">
-        <div class="home-style-img">
+        <div class="home-style-img zoom-hover">
           <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Custom Contemporary Home in Colleyville">
         </div>
         <div class="home-style-content">
@@ -344,6 +347,10 @@
   </div>
 </footer>
 
+<script>
+  const ph = document.getElementById('pageHero');
+  if (ph) requestAnimationFrame(() => ph.classList.add('loaded'));
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>

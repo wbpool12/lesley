@@ -64,10 +64,13 @@
 <main>
 
   <!-- 1. Hero -->
-  <section class="hero hero-area hero-sub hero-grapevine">
+  <section class="page-hero" id="pageHero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=1400&q=80');"></div>
+    <div class="page-hero-overlay"></div>
     <div class="container">
-      <p class="hero-subtitle">The Christmas Capital of Texas</p>
+      <span class="section-label">Explore the Area</span>
       <h1>Grapevine, Texas</h1>
+      <p class="lead">The Christmas Capital of Texas</p>
     </div>
   </section>
 
@@ -106,7 +109,7 @@
         <h2>Living in Grapevine: Pros &amp; Cons</h2>
         <div class="bar"></div>
       </div>
-      <div class="pros-cons reveal">
+      <div class="pros-cons stagger-children">
         <div class="pros-col">
           <h3>5 Reasons You'll Love It</h3>
           <ul>
@@ -171,7 +174,7 @@
       <p>Grapevine's housing stock reflects the city's rich heritage and evolving tastes. From lovingly restored historic homes near downtown to newer custom builds in master-planned communities, the architectural diversity is one of the things that makes Grapevine's real estate market so appealing. Here are three of the most popular styles you will find throughout the city.</p>
 
       <div class="home-style-row reveal">
-        <div class="home-style-img">
+        <div class="home-style-img zoom-hover">
           <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800&q=80" alt="Victorian home in Grapevine, TX">
         </div>
         <div>
@@ -181,7 +184,7 @@
       </div>
 
       <div class="home-style-row reverse reveal">
-        <div class="home-style-img">
+        <div class="home-style-img zoom-hover">
           <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80" alt="Craftsman home in Grapevine, TX">
         </div>
         <div>
@@ -191,7 +194,7 @@
       </div>
 
       <div class="home-style-row reveal">
-        <div class="home-style-img">
+        <div class="home-style-img zoom-hover">
           <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Mediterranean home in Grapevine, TX">
         </div>
         <div>
@@ -351,6 +354,10 @@
   </div>
 </footer>
 
+<script>
+  const ph = document.getElementById('pageHero');
+  if (ph) requestAnimationFrame(() => ph.classList.add('loaded'));
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -61,14 +61,17 @@
   </nav>
 </header>
 
-<section class="hero hero-sub hero-renting">
+<section class="page-hero" id="pageHero">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1400&q=80');"></div>
+  <div class="page-hero-overlay"></div>
   <div class="container">
+    <span class="section-label">Work With Lesley</span>
     <h1>Renting</h1>
     <p class="lead">Whether you're searching for the perfect rental home or looking to rent out your property, Lesley has the expertise to guide you.</p>
   </div>
 </section>
 
-<section class="section">
+<section class="section reveal">
   <div class="container">
     <div class="section-header">
       <h2>For Renters</h2>
@@ -81,21 +84,21 @@
         <p>Whether you're relocating to the area, downsizing, or simply looking for your next home, Lesley provides personalized guidance to match you with a rental property that meets your needs and exceeds your expectations. Her deep knowledge of the local market means you get access to listings and insights that others miss.</p>
         <a href="contact.html" class="btn btn-gold">Find Your Rental</a>
       </div>
-      <div class="split-visual">
+      <div class="split-visual img-frame">
         <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80" alt="Rental home in DFW" style="width:100%; height:100%; object-fit:cover;">
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section-gray">
+<section class="section section-gray reveal">
   <div class="container">
     <div class="section-header">
       <h2>For Landlords &amp; Property Owners</h2>
       <p class="lead">Comprehensive services to help you rent out your property with ease and confidence.</p>
       <div class="bar"></div>
     </div>
-    <div class="feature-list" style="max-width:720px;margin:0 auto">
+    <div class="feature-list stagger-children" style="max-width:720px;margin:0 auto">
       <div class="feature-item">
         <span class="feature-check">&#10003;</span>
         <div>
@@ -206,6 +209,10 @@
   </div>
 </footer>
 
+<script>
+  const ph = document.getElementById('pageHero');
+  if (ph) requestAnimationFrame(() => ph.classList.add('loaded'));
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>
